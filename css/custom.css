@@ -1,0 +1,223 @@
+html,
+body {
+  height: 100%;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  font-size: 17px;
+  letter-spacing: 1;
+}
+
+.about-text {
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+}
+
+.bi-list {
+  color: #7a7a7a;
+}
+
+.navbar-light .navbar-toggler {
+  color: #7a7a7a;
+}
+
+.navbar-light .navbar-toggler:hover {
+  color: #969191;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.navbar-nav {
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  font-size: 18px;
+  color: #000; /* Black text color */
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #000;
+}
+
+.nav-link:hover::before {
+  transform: scaleX(1);
+  transform-origin: center;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+header {
+  background: no-repeat center center;
+  background-size: cover;
+  color: white;
+}
+
+.color-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  min-height: 60vh;
+}
+
+.web {
+  font-size: 2.7vw;
+  letter-spacing: 2px;
+  opacity: 0.5;
+  font-family: "Krona One", sans-serif;
+}
+
+.index {
+  font-size: 1.7rem;
+  font-family: "Krona One", sans-serif;
+}
+
+.singleCol {
+  max-width: 1000px;
+}
+
+.singleCol1 {
+  max-width: 1050px;
+}
+
+.walking-gif {
+  width: 76px;
+  bottom: 0;
+}
+
+.pogi {
+  filter: saturate(0.8);
+}
+
+.index {
+  letter-spacing: 0.5px;
+}
+
+.lead {
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+a.about-link {
+  color: black;
+}
+
+.text-about {
+  font-size: 28px;
+  font-family: "Krona One", sans-serif;
+}
+
+img.rounded-circle {
+  border: 3px solid #000000;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  transform: rotate3d(2deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+img.rounded-circle:hover {
+  transform: rotate(-5deg);
+}
+
+.portfolio {
+  font-family: "Krona One", sans-serif;
+  font-size: 28px;
+}
+
+.btn-interactive {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.btn-interactive:hover {
+  background-color: white;
+  color: #000000;
+  transform: scale(1.1);
+}
+
+.card-body {
+  background-color: white;
+}
+
+.card-text {
+  letter-spacing: 0.5px;
+}
+
+.card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contact-text {
+  font-family: "Krona One", sans-serif;
+  font-size: 28px;
+}
+
+.text-contact {
+  letter-spacing: 0.5px;
+}
+
+.btn-outline-dark {
+  background-color: black;
+  color: white;
+}
+
+footer {
+  background-color: #000000;
+  color: wheat;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: #dfdfdf;
+}
+
+@media (max-width: 767.98px) {
+  .color-overlay {
+    min-height: 30vh;
+  }
+}
